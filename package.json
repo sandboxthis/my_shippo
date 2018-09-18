@@ -1,11 +1,11 @@
 {
-  "name": "web",
+  "name": "Shippo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Study Material ONLY",
   "main": "index.js",
   "scripts": {
-    "live":  "live-server",
-    "sync":  "browser-sync start --config bs-config.js",
+    "live": "live-server",
+    "sync": "browser-sync start --config bs-config.js",
     "watch": "node-sass sass/main.scss css/app.css --watch",
     "start": "npm-run-all --parallel watch sync"
   },
