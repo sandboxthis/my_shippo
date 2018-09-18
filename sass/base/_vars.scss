@@ -1,0 +1,47 @@
+:root {
+  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 992px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 576px;
+  --breakpoint-xs: 0;
+  --primary:    #259fa5;
+  --pri-dark:   #218085;
+  --secondary:  #6c757d;
+  --black:      #262a31;
+  --dark:       #343a40;
+  --grey-black: #333740;
+  --grey-dark:  #3b414d;
+  --grey:       #6c757d;
+  --grey-light: #cecece;
+  --light:      #f2f5f7;
+  --white:      #ffffff;
+  --indigo:     #6610f2;
+  --lavander:   #6f42c1;
+  --purple:     #ad7fd8;
+  --pur-light:  #efe6f8;
+  --pink:       #e83e8c;
+  --danger:     #dc3545;
+  --red:        #dc3545;
+  --orange:     #fd7e14;
+  --warning:    #ffc107;
+  --yellow:     #f9c731;
+  --blue:       #007bff;
+  --cyan:       #17a2b8;
+  --info:       #17a2b8;
+  --focus:      #8dc8cb;
+  --green:      #5fb23c;
+  --success:    #3cb28b;
+  --teal:       #3895a1;
+  --tea-light:  #d0eaec;
+}
+
+//
+// VARIABLES - FONTS
+$sans-serif: 'Montserrat', sans-serif;
+$monospace: 'Source Code Pro', monospace;;
+
+//
+// MIXINS
+@mixin debug {
+  border: 1.5px solid rgba(255, 0, 0, .5);
+}

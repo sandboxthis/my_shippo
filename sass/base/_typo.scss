@@ -1,0 +1,31 @@
+/* -------------------------- *
+    Typography
+ * -------------------------- */
+
+ .menu-links {
+  font-size: 1.3rem;
+  letter-spacing: .6px;
+
+  a {
+    color: var(--white);
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.heading {
+  h1, p { color: var(--white);}
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: .6px;
+    margin: 4rem 0;
+  }
+
+  a { color: var(--white); }
+}
+
+.texting {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}

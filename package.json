@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live":  "live-server",
+    "sync":  "browser-sync start --config bs-config.js",
+    "watch": "node-sass sass/main.scss css/app.css --watch",
+    "start": "npm-run-all --parallel watch sync"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3"
+  }
+}
