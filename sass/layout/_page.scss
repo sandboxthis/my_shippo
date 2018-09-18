@@ -1,7 +1,6 @@
 /* -------------------------- *
     Navigation
  * -------------------------- */
-
 header {
   position: relative;
   overflow: hidden;
@@ -19,14 +18,10 @@ header {
     z-index: -1;
   }
 
-  //
   // NAVBAR
   nav {
 
-    .logo {
-      padding: 2.5rem 3.5rem;
-      img { height: 5.7rem; }
-    }
+    .logo { padding: 2.5rem 3.5rem; }
 
     .menu {
       flex: 1;
@@ -40,34 +35,25 @@ header {
         }
       }
 
-      .popup {
-        // temporary hidden until edit...
-        display: none;
-      }
+      // temporary hidden until edit...
+      .popup { display: none; }
     }
 
-    .cta {
-      margin: 0 4rem;
-    }
+    .cta { margin: 0 4rem; }
   }
 
-  //
   // HERO
   .heading {
     padding: 1rem 1rem 0 2.5rem;
     button { margin: 0 2rem 0 0; }
   }
 
-  .cta {
-    a:hover { text-decoration: underline; }
-  }
+  .cta a:hover { text-decoration: underline; }
 
   .float {
     position: relative;
 
     &-right {
-      img { max-width: 120%; }
-
       .overlay {
         position: absolute;
         top: 4%;
@@ -82,44 +68,35 @@ header {
 /* -------------------------- *
     Section > Brands
  * -------------------------- */
-
  #brands {
   overflow: hidden;
 
-  .row  {
+  .row {
     font-weight: 400;
     margin-bottom: 6rem;
   }
 
-  .banner-list {
-    margin-bottom: 12rem;
-
-    img { height: 5rem; padding: 0 4rem;}
-  }
-
+  .banner-list { margin-bottom: 12rem; }
 }
 
 
  /* -------------------------- *
     Section > Featured
  * -------------------------- */
-
  #featured {
 
   .feat-boxes {
     text-align: center;
-    padding: 5rem;
+    padding: 6rem;
 
     .box {
       padding: 1rem;
 
-      .nudge {
-        margin: -1.7rem 0;
-      }
+      .nudge { margin: -1.7rem 0; }
 
       h3 {
-        padding: 4rem 5rem 3rem;
         line-height: 1.4;
+        padding: 4rem 5rem 3rem;
       }
 
       p {
@@ -128,14 +105,12 @@ header {
       }
     }
   }
-
 }
 
 
 /* -------------------------- *
     Section > Connect
  * -------------------------- */
-
 #connect {
   background: url(../img/layout/bg-connect.jpg) no-repeat;
   background-size: cover;
@@ -147,8 +122,10 @@ header {
 
     p { padding: 3rem 1rem 6rem 0; }
 
-    a { white-space: nowrap; &:hover { text-decoration: underline; } }
-
+    a {
+      white-space: nowrap;
+      &:hover { text-decoration: underline; }
+    }
   }
 
   .box-right {
@@ -189,19 +166,18 @@ header {
       padding: 2rem;
       background-color: var(--grey-dark);
 
+      overflow: scroll;
       position: absolute;
       top: 27px;
       left: 0;
       right: 0;
       bottom: 0;
-
-      overflow: scroll;
     }
 
       [type=radio]:checked ~ label {
-        z-index: 1;
         color: var(--light);
         background: var(--grey-dark);
+        z-index: 1;
       }
 
       [type=radio]:checked ~ label ~ .code {
@@ -212,24 +188,16 @@ header {
       position: absolute;
       top: 3rem;
       left: -2rem;
-
-      img {
-        width: 60rem;
-        box-shadow: -5px 5px 5rem -2rem var(--grey);
-      }
     }
   }
 }
 
 
-
 /* -------------------------- *
     Section > Carrier
  * -------------------------- */
-
 .carriers {
   margin-top: 12rem;
-
 
   .row {
     line-height: 1.7;
@@ -237,51 +205,25 @@ header {
     margin-bottom: 6rem;
 
     p { font-size: 1.3rem; }
-
   }
 
   .logo-list {
-    position: relative;
     overflow: hidden;
     width: 76rem;
     height: 12rem;
-
-    @include debug;
-
-    img {
-      margin: 0 2rem;
-      width: auto;
-      height: 8.5rem;
-      border-radius: 100%;
-      box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
-    }
-  }
-
-  .cta {
-    padding: 12rem;
-  }
-
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: 8.5rem;
-
     position: relative;
-    bottom: -2px;
   }
 
+  .cta { padding: 12rem; }
 }
-
-
 
 
 /* -------------------------- *
     Section > Solutions
  * -------------------------- */
-
 #solutions {
-  background-color: var(--light);
   margin-bottom: 8.5rem;
+  background-color: var(--light);
 
   .row {
     line-height: 1.7;
@@ -291,9 +233,9 @@ header {
 
   .columns {
 
-    .box {
+    .col {
       padding: 1.5rem;
-      max-width: 45%;
+      width: 50rem;
 
       &-head-1 {
         background: url(../img/layout/solution-head-1.png) no-repeat;
@@ -308,8 +250,9 @@ header {
       }
 
       &-content {
+        margin-bottom: 1.2rem;
         background-color: var(--white);
-        box-shadow: 0 2rem 3rem -1rem rgba(0,0,0,.12);
+        box-shadow: 0 2rem 3rem -1rem rgba(0,0,0,.08);
 
         h2 { padding: 4rem 0; }
 
@@ -341,10 +284,10 @@ header {
           &::before {
             content: "✓";
             display: inline-block;
-            width: 2rem;
-            height: 2rem;
             padding-top: 3px;
             margin-right: 3rem;
+            width: 2rem;
+            height: 2rem;
             color: var(--purple);
             background-color: var(--pur-light);
             border-radius: 100%;
@@ -362,84 +305,56 @@ header {
 
           &:hover { text-decoration: underline; }
         }
-
-      }
-
-      img {
-        width: auto;
-        height: 8.5rem;
-        margin: 5rem;
-        border-radius: 100%;
-        box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
-
-        position: relative;
-        bottom: 0;
       }
     }
   }
-
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: 6rem;
-
-    position: relative;
-    bottom: -5.5rem;
-  }
-
 }
-
 
 
 /* -------------------------- *
     Section > Customers
  * -------------------------- */
-
 #customers {
+  overflow: hidden;
   padding: 0 2rem;
   margin-bottom: 6rem;
-  overflow: hidden;
 
   .row {
-    line-height: 1.7;
+    line-height: 2.4;
     max-width: 60%;
-    margin: 8rem;
+    margin: 4rem;
   }
 
   .card {
-    margin: 1.5rem;
+    margin: 1rem 1.5rem 4rem;
     width: 34rem;
-
-    img {
-      width: 34rem;
-    }
 
     &-quote {
       padding: 5rem 2rem;
       height: 30rem;
       background-color: var(--white);
-      box-shadow: 0 1rem 3rem rgba(0,0,0,.1);
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.05);
 
       blockquote {
         font-size: 1.4rem;
         line-height: 2;
-        height: 18rem;
+        height: 16rem;
       }
 
-      h4 { white-space: nowrap; margin-bottom: 2rem; }
+      h4 {
+        white-space: nowrap;
+        margin-bottom: 2rem;
+      }
 
       a:hover { text-decoration: underline; }
     }
   }
-
 }
-
 
 
 /* -------------------------- *
     Section > SignUp
  * -------------------------- */
-
 #signup {
   padding: 5rem 2rem;
   background: url(../img/layout/logo-footer.png) no-repeat;
@@ -454,29 +369,26 @@ header {
 
     p {
       font-size: 2rem;
-      color: var(--light);
       margin: 2rem 0;
+      color: var(--light);
     }
   }
 
   .cta {
 
     button {
-      padding: 1.8rem 3.5rem;
       white-space: nowrap;
+      padding: 1.8rem 3.5rem;
       box-shadow: 0 4px 2rem rgba(0,0,0,.5);
     }
   }
-
 }
 
 
 /* -------------------------- *
     Section > Footer
  * -------------------------- */
-
 footer {
-
 
   .row {
     display: flex;
@@ -484,6 +396,7 @@ footer {
     padding: 6rem 0;
     width: 100%;
   }
+
   .col-5 {
 
     h2 {
@@ -493,15 +406,13 @@ footer {
       color: var(--light);
     }
 
-    li {
-      margin-bottom: 2rem;
-    }
+    li { margin-bottom: 2rem; }
   }
 
   .logo-bottom {
     display: block;
     margin-bottom: 6rem;
+
     p { padding: 2rem; }
   }
-
 }
