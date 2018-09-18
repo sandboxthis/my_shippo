@@ -9,7 +9,6 @@ header {
     background: url(../img/layout/bg-header.jpg) no-repeat 50%;
     background-size: cover;
     background-position: bottom;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -55,10 +54,10 @@ header {
 
     &-right {
       .overlay {
+        max-width: 93%;
         position: absolute;
         top: 4%;
         left: 13%;
-        max-width: 93%;
       }
     }
   }
@@ -154,7 +153,6 @@ header {
         margin-left: -1px;
         color: var(--primary);
         background-color: var(--grey-black);
-
         position: relative;
         left: 1px;
 
@@ -165,13 +163,12 @@ header {
     .code {
       padding: 2rem;
       background-color: var(--grey-dark);
-
-      overflow: scroll;
       position: absolute;
       top: 27px;
       left: 0;
       right: 0;
       bottom: 0;
+      overflow: scroll;
     }
 
       [type=radio]:checked ~ label {
@@ -208,10 +205,10 @@ header {
   }
 
   .logo-list {
-    overflow: hidden;
     width: 76rem;
     height: 12rem;
     position: relative;
+    overflow: hidden;
   }
 
   .cta { padding: 12rem; }
@@ -315,9 +312,9 @@ header {
     Section > Customers
  * -------------------------- */
 #customers {
-  overflow: hidden;
   padding: 0 2rem;
   margin-bottom: 6rem;
+  overflow: hidden;
 
   .row {
     line-height: 2.4;
@@ -342,8 +339,8 @@ header {
       }
 
       h4 {
-        white-space: nowrap;
         margin-bottom: 2rem;
+        white-space: nowrap;
       }
 
       a:hover { text-decoration: underline; }
@@ -377,9 +374,9 @@ header {
   .cta {
 
     button {
-      white-space: nowrap;
       padding: 1.8rem 3.5rem;
       box-shadow: 0 4px 2rem rgba(0,0,0,.5);
+      white-space: nowrap;
     }
   }
 }

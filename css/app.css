@@ -220,10 +220,10 @@ header {
   header .float {
     position: relative; }
     header .float-right .overlay {
+      max-width: 93%;
       position: absolute;
       top: 4%;
-      left: 13%;
-      max-width: 93%; }
+      left: 13%; }
 
 /* -------------------------- *
     Section > Brands
@@ -298,12 +298,12 @@ header {
     #connect .box-right .code {
       padding: 2rem;
       background-color: var(--grey-dark);
-      overflow: scroll;
       position: absolute;
       top: 27px;
       left: 0;
       right: 0;
-      bottom: 0; }
+      bottom: 0;
+      overflow: scroll; }
     #connect .box-right [type=radio]:checked ~ label {
       color: var(--light);
       background: var(--grey-dark);
@@ -327,10 +327,10 @@ header {
     .carriers .row p {
       font-size: 1.3rem; }
   .carriers .logo-list {
-    overflow: hidden;
     width: 76rem;
     height: 12rem;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .carriers .cta {
     padding: 12rem; }
 
@@ -404,9 +404,9 @@ header {
     Section > Customers
  * -------------------------- */
 #customers {
-  overflow: hidden;
   padding: 0 2rem;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  overflow: hidden; }
   #customers .row {
     line-height: 2.4;
     max-width: 60%;
@@ -424,8 +424,8 @@ header {
         line-height: 2;
         height: 16rem; }
       #customers .card-quote h4 {
-        white-space: nowrap;
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        white-space: nowrap; }
       #customers .card-quote a:hover {
         text-decoration: underline; }
 
@@ -446,9 +446,9 @@ header {
     margin: 2rem 0;
     color: var(--light); }
   #signup .cta button {
-    white-space: nowrap;
     padding: 1.8rem 3.5rem;
-    box-shadow: 0 4px 2rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 4px 2rem rgba(0, 0, 0, 0.5);
+    white-space: nowrap; }
 
 /* -------------------------- *
     Section > Footer
