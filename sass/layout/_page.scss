@@ -2,64 +2,54 @@
     Navigation
  * -------------------------- */
 header {
+  background: url(../img/layout/bg-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: 100% -20rem;
   position: relative;
   overflow: hidden;
 
-  .hero-mask {
-    background: url(../img/layout/bg-header.jpg) no-repeat 50%;
-    background-size: cover;
-    background-position: bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 25%;
-    z-index: -1;
+
+  button {
+    margin-right: 2rem;
   }
 
-  // NAVBAR
-  nav {
-
-    .logo { padding: 2.5rem 3.5rem; }
-
-    .menu {
-      flex: 1;
-      text-align: right;
-
-      li {
-        display: inline-block;
-
-        &:not(:last-child) {
-          margin-right: 5%;
-        }
-      }
-
-      // temporary hidden until edit...
-      .popup { display: none; }
-    }
-
-    .cta { margin: 0 4rem; }
+  .container {
+    margin-top: 12rem;
   }
 
-  // HERO
   .heading {
     padding: 1rem 1rem 0 2.5rem;
-    button { margin: 0 2rem 0 0; }
   }
 
-  .cta a:hover { text-decoration: underline; }
 
   .float {
     position: relative;
 
-    &-right {
-      .overlay {
-        max-width: 93%;
-        position: absolute;
-        top: 4%;
-        left: 13%;
-      }
+    .overlay {
+      max-width: 93%;
+      position: absolute;
+      top: 4%;
+      left: 13%;
     }
+  }
+}
+
+nav {
+  height: 10.5rem;
+  margin-top: -1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  transition: all .2s ease;
+
+  .logo {
+    padding: 2.5rem 3.5rem;
+  }
+
+  .cta {
+    margin: 0 4rem;
   }
 }
 
@@ -306,7 +296,6 @@ header {
     }
   }
 }
-
 
 /* -------------------------- *
     Section > Customers
