@@ -1,5 +1,9 @@
+/*  External Imports
+ * -------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,600,700');
 
+/*  Master Defaults
+ * -------------------------- */
 body {
   font-family: $sans-serif;
   font-weight: 300;
@@ -37,6 +41,9 @@ a { text-decoration: none; color: var(--dark); }
 a:link,a:visited { color: var(--black); }
 a:hover { color: var(--primary); text-decoration: underline; }
 
+
+/*  Classes Defaults
+ * -------------------------- */
 .container {
   display: flex;
 }
@@ -80,4 +87,14 @@ a:hover { color: var(--primary); text-decoration: underline; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.heading {
+  h1, p, a { color: var(--white);}
+
+  p {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin: 4rem 0;
+  }
 }

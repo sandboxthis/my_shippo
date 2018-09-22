@@ -4,7 +4,7 @@
 header {
   background: url(../img/layout/bg-header.jpg) no-repeat;
   background-size: cover;
-  background-position: 100% -20rem;
+  background-position: 100% -10rem;
   position: relative;
   overflow: hidden;
 
@@ -57,15 +57,6 @@ nav {
  * -------------------------- */
 #brands {
   overflow: hidden;
-
-  .row {
-    font-weight: 400;
-    margin-bottom: 6rem;
-  }
-
-  .banner-list {
-    margin-bottom: 12rem;
-  }
 }
 
 
@@ -75,27 +66,17 @@ nav {
 #featured {
 
   .feat-boxes {
-    text-align: center;
     padding: 6rem;
 
     .box {
-      padding: 1rem;
+      padding: 2em;
 
       .nudge { margin: -1.7rem 0; }
 
-      h3 {
-        line-height: 1.4;
-        padding: 4rem 5rem 3rem;
-      }
-
-      p {
-        font-size: 1.2rem;
-        line-height: 1.7;
-      }
+      h3 { padding: 4rem 5rem 3rem; }
     }
   }
 }
-
 
 /* -------------------------- *
     Section > Connect
@@ -110,11 +91,6 @@ nav {
     padding: 4rem;
 
     p { padding: 3rem 1rem 6rem 0; }
-
-    a {
-      white-space: nowrap;
-      &:hover { text-decoration: underline; }
-    }
   }
 
   .box-right {
@@ -139,7 +115,7 @@ nav {
       .round-r { border-radius: 0 1rem 0 0; }
 
       label {
-        padding: 2.5rem;
+        padding: 2.7rem;
         margin-left: -1px;
         color: var(--primary);
         background-color: var(--grey-black);
@@ -186,20 +162,9 @@ nav {
 .carriers {
   margin-top: 12rem;
 
-  .row {
-    line-height: 1.7;
-    max-width: 40%;
-    margin-bottom: 6rem;
+  p { margin: 4rem; }
 
-    p { font-size: 1.3rem; }
-  }
-
-  .logo-list {
-    width: 76rem;
-    height: 12rem;
-    position: relative;
-    overflow: hidden;
-  }
+  .row { max-width: 50%; }
 
   .cta { padding: 12rem; }
 }
@@ -213,7 +178,6 @@ nav {
   background-color: var(--light);
 
   .row {
-    line-height: 1.7;
     max-width: 60%;
     margin: 8rem;
   }
@@ -222,7 +186,7 @@ nav {
 
     .col {
       padding: 1.5rem;
-      width: 50rem;
+      width: 48rem;
 
       &-head-1 {
         background: url(../img/layout/solution-head-1.png) no-repeat;
@@ -244,9 +208,6 @@ nav {
         h2 { padding: 4rem 0; }
 
         p {
-          font-size: 1.5rem;
-          font-weight: 300;
-          line-height: 1.5;
           padding: 0 6rem;
 
           &::after {
@@ -263,8 +224,6 @@ nav {
         li {
           display: flex;
           align-items: center;
-          font-size: 1.5rem;
-          font-weight: 300;
           padding-bottom: 2rem;
           margin-left: 9rem;
 
@@ -306,8 +265,7 @@ nav {
   overflow: hidden;
 
   .row {
-    line-height: 2.4;
-    max-width: 60%;
+    max-width: 50%;
     margin: 4rem;
   }
 
@@ -322,8 +280,6 @@ nav {
       box-shadow: 0 1rem 3rem rgba(0,0,0,.05);
 
       blockquote {
-        font-size: 1.4rem;
-        line-height: 2;
         height: 16rem;
       }
 
@@ -345,7 +301,7 @@ nav {
   padding: 5rem 2rem;
   background: url(../img/layout/logo-footer.png) no-repeat;
   background-size: 23%;
-  background-position: top left;
+  background-position: bottom left;
   background-color: var(--black);
   border-bottom: 1px solid var(--dark);
 
@@ -354,7 +310,6 @@ nav {
     h1 { color: var(--primary); }
 
     p {
-      font-size: 2rem;
       margin: 2rem 0;
       color: var(--light);
     }
@@ -365,7 +320,6 @@ nav {
     button {
       padding: 1.8rem 3.5rem;
       box-shadow: 0 4px 2rem rgba(0,0,0,.5);
-      white-space: nowrap;
     }
   }
 }
@@ -386,8 +340,6 @@ footer {
   .col-5 {
 
     h2 {
-      font-size: 1.3rem;
-      text-transform: uppercase;
       margin-bottom: 4rem;
       color: var(--light);
     }

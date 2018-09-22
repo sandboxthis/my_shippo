@@ -1,31 +1,104 @@
-/* -------------------------- *
-    Typography
+/*  Typography
  * -------------------------- */
+nav {
+  .menu-links {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .6px;
+    position: relative;
 
- .menu-links {
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: .6px;
-  position: relative;
-
-  a {
-    color: var(--white);
+    a {
+      color: var(--white);
+    }
   }
 }
 
-.heading {
-  h1, p { color: var(--white);}
+#brands {
+  p {
+    font-weight: 400;
+  }
+}
+
+#featured {
+  .feat-boxes {
+    text-align: center;
+
+    h3 {
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+#connect {
+  .box-left {
+    font-size: 1.5rem;
+    line-height: 1.7;
+
+    a {
+      white-space: nowrap;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .carriers {
+    line-height: 1.4;
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+#solutions {
+  .row {
+    line-height: 1.7;
+  }
+
+  li {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
 
   p {
-    font-size: 2rem;
-    line-height: 1.8;
-    margin: 4rem 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
   }
 
-  a { color: var(--white); }
 }
 
-.texting {
-  font-size: 1.5rem;
-  line-height: 1.7;
+#customers {
+  .row {
+    line-height: 2.4;
+  }
+
+  blockquote {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}
+
+#signup {
+  p {
+    font-size: 2rem;
+  }
+
+  button {
+    white-space: nowrap;
+  }
+}
+
+footer {
+  h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
 }

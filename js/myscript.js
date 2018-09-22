@@ -8,5 +8,3 @@ window.addEventListener('scroll', function (event) {
     myNav.classList.remove('sticky');
   }
 });
-
-

@@ -1,6 +1,6 @@
 /*  Navbar change on scroll
  * -------------------------- */
- .main-nav {
+.main-nav {
   background-color: transparent;
 
   .logo-gray {
@@ -17,7 +17,7 @@
   }
 
   a {
-    color: var(--black);
+    color: var(--black) !important;
   }
 
   button {
@@ -54,13 +54,9 @@
       padding: 2rem 0.5rem;
     }
   }
-  // temporary hidden until edit...
-     .popup { display: none; }
-  // temporary hidden until edit...
 }
 
 .popupON {
-  // display: flex;
   display: none;
   text-align: left;
   padding: 4rem;
@@ -108,7 +104,6 @@
   a {
     display: flex;
     min-width: 18rem;
-    // @include debug;
   }
 
   .ico-cell {
@@ -173,25 +168,45 @@
 /*  Brands infinite scroll
  * -------------------------- */
 .banner {
-  height: 12rem;
-  width: 260rem;
-  margin: 20rem auto;
-  position: relative;
-
-  border: 2px solid #eee;
   overflow: hidden;
-  box-sizing: border-box;
 
-  // @include debug;
+  &-box {
+    overflow: hidden;
+    height: 12rem;
+    width: 80rem;
+    margin: 4rem auto 12rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      float: left;
+      position: relative;
+      width: 5rem;
+      height: 100%;
+      background: linear-gradient(to right,
+            rgba(255,255,255,1), rgba(255,255,255,0));
+      z-index: 9;
+    }
+
+    &::after {
+      content: '';
+      float: right;
+      position: relative;
+      width: 5rem;
+      height: 100%;
+      background-image: linear-gradient(to left,
+            rgba(255,255,255,1), rgba(255,255,255,0));
+      z-index: 9;
+    }
+
+  }
 
   &-list {
-    @include debug;
-    display: block;
-    width: 200%;
+    width: 632%;  // size of all imgs combined (adjusted for %)
+    height: 100%;
     margin: 2.5rem 0;
     position: absolute;
-
-    animation: marquee  20s linear infinite;
+    animation: marquee 20s linear infinite;
   }
 
   &-list:hover {
@@ -205,6 +220,38 @@
 
   @keyframes marquee {
     0% { left: 0; }
-    100% { left: -100%; }
+    100% { left: -300%; }  // half size of all imgs combined (%)
+  }
+}
+
+/*  Logo infinite scroll
+ * -------------------------- */
+.logos-box {
+    overflow: hidden;
+    width: 80rem;
+    height: 14rem;
+    margin: 0 auto;
+    position: relative;
+
+ .logos-list {
+    width: 385%;
+    height: 100%;
+    margin: 2rem 0;
+    position: absolute;
+    animation: marquee  28s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    span {
+      float: left;
+      width: 50%;
+    }
+
+    @keyframes marquee {
+      0% { left: 0; }
+      100% { left: -192%; }
+    }
   }
 }
