@@ -1,4 +1,6 @@
-.main-nav {
+/*  Navbar change on scroll
+ * -------------------------- */
+ .main-nav {
   background-color: transparent;
 
   .logo-gray {
@@ -30,7 +32,8 @@
   }
 }
 
-
+/*  Navbar menu shows on hover
+ * -------------------------- */
 .menu {
   flex: 1;
   text-align: right;
@@ -51,11 +54,9 @@
       padding: 2rem 0.5rem;
     }
   }
-
   // temporary hidden until edit...
-  .popup { display: none; }
+     .popup { display: none; }
   // temporary hidden until edit...
-
 }
 
 .popupON {
@@ -148,37 +149,62 @@
   }
 }
 
-
 .pops-2x {
   width: 78rem;
   height: 35rem;
 }
+
 .pops-1x {
   width: 44rem;
   height: 35rem;
 }
+
 .pops-0x {
   width: 26rem;
   height: 29rem;
 }
+
 .pops-0y {
   width: 26rem;
   height: 35rem;
 }
 
 
+/*  Brands infinite scroll
+ * -------------------------- */
+.banner {
+  height: 12rem;
+  width: 260rem;
+  margin: 20rem auto;
+  position: relative;
 
-/*keyframe animations*/
-.first {
-  animation: bannermove 30s linear infinite;
-}
+  border: 2px solid #eee;
+  overflow: hidden;
+  box-sizing: border-box;
 
-@keyframes "bannermove" {
- 0% {
-    margin-left: 0px;
- }
- 100% {
-    margin-left: -2125px;
- }
+  // @include debug;
 
+  &-list {
+    @include debug;
+    display: block;
+    width: 200%;
+    margin: 2.5rem 0;
+    position: absolute;
+
+    animation: marquee  20s linear infinite;
+  }
+
+  &-list:hover {
+    animation-play-state: paused;
+  }
+
+  span {
+    float: left;
+    width: 50%;
+  }
+
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
 }

@@ -226,8 +226,8 @@ nav {
     margin-bottom: 12rem; }
 
 /* -------------------------- *
-    Section > Featured
- * -------------------------- */
+   Section > Featured
+* -------------------------- */
 #featured .feat-boxes {
   text-align: center;
   padding: 6rem; }
@@ -513,7 +513,7 @@ nav img {
 /*  Brands
  * -------------------------- */
 .banner-list img {
-  height: 5rem;
+  height: 6rem;
   padding: 0 4rem; }
 
 /*  Connect
@@ -561,6 +561,8 @@ nav img {
 .card img {
   width: 34rem; }
 
+/*  Navbar change on scroll
+ * -------------------------- */
 .main-nav {
   background-color: transparent; }
   .main-nav .logo-gray {
@@ -581,6 +583,8 @@ nav img {
       color: var(--primary);
       background-color: var(--focus); }
 
+/*  Navbar menu shows on hover
+ * -------------------------- */
 .menu {
   flex: 1;
   text-align: right; }
@@ -671,12 +675,31 @@ nav img {
   width: 26rem;
   height: 35rem; }
 
-/*keyframe animations*/
-.first {
-  animation: bannermove 30s linear infinite; }
+/*  Brands infinite scroll
+ * -------------------------- */
+.banner {
+  height: 12rem;
+  width: 260rem;
+  margin: 20rem auto;
+  position: relative;
+  border: 2px solid #eee;
+  overflow: hidden;
+  box-sizing: border-box; }
+  .banner-list {
+    border: 1.5px solid rgba(255, 0, 0, 0.5);
+    display: block;
+    width: 200%;
+    margin: 2.5rem 0;
+    position: absolute;
+    animation: marquee  20s linear infinite; }
+  .banner-list:hover {
+    animation-play-state: paused; }
+  .banner span {
+    float: left;
+    width: 50%; }
 
-@keyframes "bannermove" {
+@keyframes marquee {
   0% {
-    margin-left: 0px; }
+    left: 0; }
   100% {
-    margin-left: -2125px; } }
+    left: -100%; } }

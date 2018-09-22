@@ -8,7 +8,6 @@ header {
   position: relative;
   overflow: hidden;
 
-
   button {
     margin-right: 2rem;
   }
@@ -20,7 +19,6 @@ header {
   .heading {
     padding: 1rem 1rem 0 2.5rem;
   }
-
 
   .float {
     position: relative;
@@ -57,7 +55,7 @@ nav {
 /* -------------------------- *
     Section > Brands
  * -------------------------- */
- #brands {
+#brands {
   overflow: hidden;
 
   .row {
@@ -65,14 +63,16 @@ nav {
     margin-bottom: 6rem;
   }
 
-  .banner-list { margin-bottom: 12rem; }
+  .banner-list {
+    margin-bottom: 12rem;
+  }
 }
 
 
- /* -------------------------- *
-    Section > Featured
- * -------------------------- */
- #featured {
+/* -------------------------- *
+   Section > Featured
+* -------------------------- */
+#featured {
 
   .feat-boxes {
     text-align: center;
