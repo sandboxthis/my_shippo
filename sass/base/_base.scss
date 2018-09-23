@@ -1,5 +1,3 @@
-/*  External Imports
- * -------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,600,700');
 
 /*  Master Defaults
@@ -44,7 +42,7 @@ a:hover { color: var(--primary); text-decoration: underline; }
 
 /*  Classes Defaults
  * -------------------------- */
-.container {
+.container, .fluid  {
   display: flex;
 }
 
@@ -56,10 +54,6 @@ a:hover { color: var(--primary); text-decoration: underline; }
   padding-top: 5rem;
   max-width: 153rem;
   margin: 0 auto;
-}
-
-.fluid {
-  display: flex;
 }
 
 .cols {

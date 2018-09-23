@@ -1,27 +1,26 @@
-/*  Navigation
+/* -------------------------- *
+    IMAGES
  * -------------------------- */
+
+/*  Navigation -------------- */
 nav img { height: 5.7rem; }
 
-/*  Hero
- * -------------------------- */
+/*  Hero -------------------- */
 .float-right img { max-width: 120%; }
 
-/*  Brands
- * -------------------------- */
+/*  Brands ------------------ */
 .banner-list img {
   width: 25rem;
   padding: 0 5rem;
 }
 
-/*  Connect
- * -------------------------- */
+/*  Connect ----------------- */
 .underlay img {
   width: 60rem;
   box-shadow: -5px 5px 5rem -2rem var(--grey);
 }
 
-/*  Carrier
- * -------------------------- */
+/*  Carrier ----------------- */
 .carriers > img {
   // divider wave bottom
   width: 100%;
@@ -40,8 +39,7 @@ nav img { height: 5.7rem; }
   box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
 }
 
-/*  Solutions
- * -------------------------- */
+/*  Solutions --------------- */
 .wave-down > img {
   width: 100%;
   max-width: 100%;
@@ -62,6 +60,5 @@ nav img { height: 5.7rem; }
   bottom: 0;
 }
 
-/*  Customers
- * -------------------------- */
+/*  Customers --------------- */
 .card img { width: 34rem; }

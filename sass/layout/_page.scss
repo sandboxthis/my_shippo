@@ -1,6 +1,6 @@
-/* -------------------------- *
+/* ========================== *
     Navigation
- * -------------------------- */
+ * ========================== */
 header {
   background: url(../img/layout/bg-header.jpg) no-repeat;
   background-size: cover;
@@ -52,17 +52,17 @@ nav {
 }
 
 
-/* -------------------------- *
+/* ========================== *
     Section > Brands
- * -------------------------- */
+ * ========================== */
 #brands {
   overflow: hidden;
 }
 
 
-/* -------------------------- *
+/* ========================== *
    Section > Featured
-* -------------------------- */
+* ========================== */
 #featured {
 
   .feat-boxes {
@@ -78,9 +78,9 @@ nav {
   }
 }
 
-/* -------------------------- *
+/* ========================== *
     Section > Connect
- * -------------------------- */
+ * ========================== */
 #connect {
   background: url(../img/layout/bg-connect.jpg) no-repeat;
   background-size: cover;
@@ -153,26 +153,21 @@ nav {
       left: -2rem;
     }
   }
+  .carriers {
+    margin-top: 12rem;
+
+    p { margin: 4rem; }
+
+    .row { max-width: 50%; }
+
+    .cta { padding: 12rem; }
+  }
 }
 
 
-/* -------------------------- *
-    Section > Carrier
- * -------------------------- */
-.carriers {
-  margin-top: 12rem;
-
-  p { margin: 4rem; }
-
-  .row { max-width: 50%; }
-
-  .cta { padding: 12rem; }
-}
-
-
-/* -------------------------- *
+/* ========================== *
     Section > Solutions
- * -------------------------- */
+ * ========================== */
 #solutions {
   margin-bottom: 8.5rem;
   background-color: var(--light);
@@ -256,9 +251,9 @@ nav {
   }
 }
 
-/* -------------------------- *
+/* ========================== *
     Section > Customers
- * -------------------------- */
+ * ========================== */
 #customers {
   padding: 0 2rem;
   margin-bottom: 6rem;
@@ -294,9 +289,9 @@ nav {
 }
 
 
-/* -------------------------- *
+/* ========================== *
     Section > SignUp
- * -------------------------- */
+ * ========================== */
 #signup {
   padding: 5rem 2rem;
   background: url(../img/layout/logo-footer.png) no-repeat;
@@ -325,9 +320,9 @@ nav {
 }
 
 
-/* -------------------------- *
+/* ========================== *
     Section > Footer
- * -------------------------- */
+ * ========================== */
 footer {
 
   .row {

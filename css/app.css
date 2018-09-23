@@ -67,8 +67,6 @@ embed, iframe, object, audio, video {
   --teal:       #3895a1;
   --tea-light:  #d0eaec; }
 
-/*  External Imports
- * -------------------------- */
 /*  Master Defaults
  * -------------------------- */
 body {
@@ -121,7 +119,7 @@ a:hover {
 
 /*  Classes Defaults
  * -------------------------- */
-.container {
+.container, .fluid {
   display: flex; }
 
 .row {
@@ -131,9 +129,6 @@ a:hover {
   padding-top: 5rem;
   max-width: 153rem;
   margin: 0 auto; }
-
-.fluid {
-  display: flex; }
 
 .cols {
   flex: 0 0 50%; }
@@ -228,9 +223,9 @@ footer h2 {
   font-size: 1.3rem;
   text-transform: uppercase; }
 
-/* -------------------------- *
+/* ========================== *
     Navigation
- * -------------------------- */
+ * ========================== */
 header {
   background: url(../img/layout/bg-header.jpg) no-repeat;
   background-size: cover;
@@ -265,15 +260,15 @@ nav {
   nav .cta {
     margin: 0 4rem; }
 
-/* -------------------------- *
+/* ========================== *
     Section > Brands
- * -------------------------- */
+ * ========================== */
 #brands {
   overflow: hidden; }
 
-/* -------------------------- *
+/* ========================== *
    Section > Featured
-* -------------------------- */
+* ========================== */
 #featured .feat-boxes {
   padding: 6rem; }
   #featured .feat-boxes .box {
@@ -283,9 +278,9 @@ nav {
     #featured .feat-boxes .box h3 {
       padding: 4rem 5rem 3rem; }
 
-/* -------------------------- *
+/* ========================== *
     Section > Connect
- * -------------------------- */
+ * ========================== */
 #connect {
   background: url(../img/layout/bg-connect.jpg) no-repeat;
   background-size: cover;
@@ -340,22 +335,18 @@ nav {
       position: absolute;
       top: 3rem;
       left: -2rem; }
+  #connect .carriers {
+    margin-top: 12rem; }
+    #connect .carriers p {
+      margin: 4rem; }
+    #connect .carriers .row {
+      max-width: 50%; }
+    #connect .carriers .cta {
+      padding: 12rem; }
 
-/* -------------------------- *
-    Section > Carrier
- * -------------------------- */
-.carriers {
-  margin-top: 12rem; }
-  .carriers p {
-    margin: 4rem; }
-  .carriers .row {
-    max-width: 50%; }
-  .carriers .cta {
-    padding: 12rem; }
-
-/* -------------------------- *
+/* ========================== *
     Section > Solutions
- * -------------------------- */
+ * ========================== */
 #solutions {
   margin-bottom: 8.5rem;
   background-color: var(--light); }
@@ -413,9 +404,9 @@ nav {
         #solutions .columns .col-content a:hover {
           text-decoration: underline; }
 
-/* -------------------------- *
+/* ========================== *
     Section > Customers
- * -------------------------- */
+ * ========================== */
 #customers {
   padding: 0 2rem;
   margin-bottom: 6rem;
@@ -439,9 +430,9 @@ nav {
       #customers .card-quote a:hover {
         text-decoration: underline; }
 
-/* -------------------------- *
+/* ========================== *
     Section > SignUp
- * -------------------------- */
+ * ========================== */
 #signup {
   padding: 5rem 2rem;
   background: url(../img/layout/logo-footer.png) no-repeat;
@@ -458,9 +449,9 @@ nav {
     padding: 1.8rem 3.5rem;
     box-shadow: 0 4px 2rem rgba(0, 0, 0, 0.5); }
 
-/* -------------------------- *
+/* ========================== *
     Section > Footer
- * -------------------------- */
+ * ========================== */
 footer .row {
   display: flex;
   justify-content: space-evenly;
@@ -481,7 +472,7 @@ footer .logo-bottom {
     padding: 2rem; }
 
 /* -------------------------- *
-    Buttons
+    BUTTONS
  * -------------------------- */
 .cta {
   display: block; }
@@ -517,30 +508,28 @@ footer .logo-bottom {
     color: var(--primary);
     background-color: var(--focus); }
 
-/*  Navigation
+/* -------------------------- *
+    IMAGES
  * -------------------------- */
+/*  Navigation -------------- */
 nav img {
   height: 5.7rem; }
 
-/*  Hero
- * -------------------------- */
+/*  Hero -------------------- */
 .float-right img {
   max-width: 120%; }
 
-/*  Brands
- * -------------------------- */
+/*  Brands ------------------ */
 .banner-list img {
   width: 25rem;
   padding: 0 5rem; }
 
-/*  Connect
- * -------------------------- */
+/*  Connect ----------------- */
 .underlay img {
   width: 60rem;
   box-shadow: -5px 5px 5rem -2rem var(--grey); }
 
-/*  Carrier
- * -------------------------- */
+/*  Carrier ----------------- */
 .carriers > img {
   width: 100%;
   max-width: 100%;
@@ -555,8 +544,7 @@ nav img {
   border-radius: 100%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
 
-/*  Solutions
- * -------------------------- */
+/*  Solutions --------------- */
 .wave-down > img {
   width: 100%;
   max-width: 100%;
@@ -573,11 +561,13 @@ nav img {
   position: relative;
   bottom: 0; }
 
-/*  Customers
- * -------------------------- */
+/*  Customers --------------- */
 .card img {
   width: 34rem; }
 
+/* -------------------------- *
+    MODULES
+ * -------------------------- */
 /*  Navbar change on scroll
  * -------------------------- */
 .main-nav {
